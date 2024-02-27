@@ -99,7 +99,7 @@ def crear_grafo_bipartito(P, I):
 def main(C):
     P = [x for x in C if x % 2 == 0]
     I = [x for x in C if x % 2 != 0]
-    G = crear_grafo_bipartito(len(P), len(I))
+    G = crear_grafo_bipartito(P, I)
     r = G.hopcroftKarp()
 
     return r
